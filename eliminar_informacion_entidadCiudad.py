@@ -7,10 +7,10 @@ from enlace_base import client
 # se obtiene la colección general (base de datos)
 
 db = client.bddDAlencastro
-coleccion = db.pais
+coleccion = db.ciudad
 
-print("Borrar registros de una colección cuando continente sea Suramérica")
-coleccion.delete_many({'continente':'Suramérica'})
+print("Borrar registros de una colección cuando paisPertenencia sea Ecuador")
+coleccion.delete_many({'paisPertenencia':'Ecuador'})
 
 print("Se muestra informacion")
 datos = coleccion.find()

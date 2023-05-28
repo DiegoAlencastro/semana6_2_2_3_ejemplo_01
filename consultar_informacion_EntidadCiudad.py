@@ -4,12 +4,13 @@
 """
 from enlace_base import client
 
-# se obtiene la colección pais de bddDAlencastro
+# se obtiene la colección ciudad de bddDAlencastro
 
 db = client.bddDAlencastro
-coleccion = db.pais
+coleccion = db.ciudad
 
-print("Datos de coleccion pais  ")
+print("Datos de coleccion ciudad")
 datos = coleccion.find()
 for registro in datos:
     print(registro)
+
